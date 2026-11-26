@@ -172,3 +172,73 @@ html {
     padding-left: 3em;
     padding-right: 3em;
 }
+#page3 {
+    min-height: 700px;
+    #line {
+    background-color: #762e3f;
+    width: 1px;
+    height:700px;
+    float: inline-start;
+    }
+
+    h2 {
+        line-height: 0;
+        overflow-wrap: normal;
+        padding-left: 0.1em;
+        font-size: 8em;
+        float: none;
+        color: #E8DDDD;
+    }
+    #articlepage3 {
+        display: inline-block;
+        background-color: #E8DDDD;
+        padding: 0em;
+        color: #762e3f;
+        height: 400px;
+        width: 250px;
+        margin-left: 1em;
+        padding: 1em;
+        vertical-align:top;
+    }
+    h3 {
+        font-size: 2em;
+        top: 0;
+
+    }
+}
+#portfoliomain {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5em;
+    overflow: scroll;
+    flex-wrap: wrap;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#portfolioimg {
+    max-width: 260px;
+}
+.portfolio {
+    padding: 1em;
+    max-width: 280px;
+    max-height: 700px;
+    background-color: #E8DDDD;
+    text-align: center;
+}
+.portfolioNoText {
+    padding: 1em;
+    max-width: 280px;
+    max-height: 700px;
+    background-color: #E8DDDD;
+    text-align: center;
+}
+#portfolio {
+    h1 {
+        color: #E8DDDD;
+        line-height: 0.2;
+        text-align: center;
+    }
+}
