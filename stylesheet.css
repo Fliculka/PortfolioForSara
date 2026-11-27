@@ -12,28 +12,20 @@ body {
 #page1 {
     color:#E8DDDD;
     h2 {
-        line-height: 1.5em;
-        font-size: 4em;
+        line-height: 1em;
+        font-size: clamp(3rem, 6vw, 4rem);
     }
-    padding-bottom: 10em;
 }
 h1 {
- font-size: 10em;
+  font-size: clamp(2.5rem, 9vw, 9rem);
 }
-#page1dot1 {
-    display: inline;
-    inline-size: auto;
-}
-.container img { 
-    width: 400px;
-    height: 650px; 
-    object-fit:cover; 
-    position: relative;
-}
-#page1img {
-line-height: 0em;
-float: inline-start;
-padding: 0.em;
+.container img {
+    float: inline-start ;
+    max-width: 400px;
+    max-height: 650px;
+    height: 650px;
+    width: 20%;
+    object-fit: cover;
 }
 
 nav.one ul {
@@ -73,10 +65,9 @@ nav.one ul li a:hover {
     background-color:#E8DDDD;
     color: #762e3f;
     padding: 1em;
+    font-size: clamp(1rem, 1.2vw, 2rem);
     padding-left: 3em;
     padding-right: 3em;
-    font-size: 1.5em;
-    display: grid;
     max-width: 30%;
     position: absolute;
     bottom: 10%;
@@ -87,7 +78,6 @@ nav.one ul li a:hover {
     background-color:#E8DDDD;
     color: #762e3f;
     font-size: 1.2em;
-    display: grid;
     max-width: 30%;
     position: absolute;
     bottom: 10%;
@@ -123,25 +113,25 @@ html {
     object-fit:cover; 
     position: relative;
     background-color:#E8DDDD;
-
+    
     h2 {
         padding-left: 0.1em;
         line-height: 0em;
-        font-size: 8em;
+        font-size: clamp(2rem, 6vw, 5rem);
         color: #762e3f;
         margin-bottom: 1em;
-
     }
     #page2img {
         float: inline-end;
         line-height: 0em;
         padding: 0.em;
     }
-    .container img { 
-    width: 400px;
-    height: 650px; 
-    object-fit:cover; 
-    padding: 1em;
+    .container img {
+    max-width: 400px;
+    max-height: 650px;
+    height: 650px;
+    width: 20%;
+    object-fit: cover;
     }
     p {
       color: #762e3f;
@@ -185,7 +175,7 @@ html {
         line-height: 0;
         overflow-wrap: normal;
         padding-left: 0.1em;
-        font-size: 8em;
+        font-size: clamp(2rem, 6vw, 5rem);
         float: none;
         color: #E8DDDD;
     }
@@ -201,7 +191,7 @@ html {
         vertical-align:top;
     }
     h3 {
-        font-size: 2em;
+        font-size: clamp(1.3rem, 3vw, 2rem);
         top: 0;
 
     }
@@ -251,7 +241,7 @@ nav.two ul {
     line-height: 2em;
     width: 100%;
     margin: 0;
-    font-size: 1.5em;
+    font-size: clamp(10em 10vw 20em);
     display: flex;
     justify-content: space-evenly;
     background-color:#E8DDDD;
@@ -278,4 +268,13 @@ nav.two ul li a {
 nav.two ul li a:hover {
     text-shadow: 0px 0px #541524;
     font-weight: 600;
+}
+p {
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+}
+#skills {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
 }
