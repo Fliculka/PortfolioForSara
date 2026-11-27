@@ -36,7 +36,7 @@ float: inline-start;
 padding: 0.em;
 }
 
-nav ul {
+nav.one ul {
     z-index: 10;
     position:fixed;
     top: 0%;
@@ -54,18 +54,18 @@ nav ul {
     flex-direction: row;
     white-space: nowrap;
 }
-ul li {
+nav.one ul li {
     display: inline-flex;
     list-style-type: none;
     text-decoration: none;
     text-align: center;
 }
-ul li a {
+nav.one ul li a {
     padding: 1%;
     text-decoration: none;
     color: #762e3f;
 }
-ul li a:hover {
+nav.one ul li a:hover {
     text-shadow: 0px 0px #541524;
     font-weight: 600;
 }
@@ -237,8 +237,45 @@ html {
 }
 #portfolio {
     h1 {
+        padding-top: 0.5em;
         color: #E8DDDD;
         line-height: 0.2;
         text-align: center;
     }
+}
+
+nav.two ul {
+    z-index: 10;
+    position:fixed;
+    top: 2em;
+    line-height: 2em;
+    width: 100%;
+    margin: 0;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#E8DDDD;
+    gap: 1%;
+    animation: navbar 2s infinite linear;
+    
+    border-top: #762e3f 2px solid;
+    
+    flex-wrap: wrap;
+    flex-direction: row;
+    white-space: nowrap;
+}
+nav.two ul li {
+    display: inline-flex;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+}
+nav.two ul li a {
+    padding: 1%;
+    text-decoration: none;
+    color: #762e3f;
+}
+nav.two ul li a:hover {
+    text-shadow: 0px 0px #541524;
+    font-weight: 600;
 }
